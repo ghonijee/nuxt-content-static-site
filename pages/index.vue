@@ -22,8 +22,14 @@
         </div>
 
         <div class="shrink-0 flex flex-col items-center">
-          <img src="~/assets/profile.jpeg" alt="Profile Yunus" class="h-44 w-44 md:h-5/6 lg:h-72 md:w-72 rounded-full object-cover" />
-          <div class="mt-3">Social Button</div>
+          <img src="~/assets/profile.jpeg" alt="Profile Yunus" class="h-44 w-44 md:h-5/6 lg:h-72 md:w-72 rounded-full object-cover border-4 border-gray-200" />
+          <div class="mt-4 flex gap-x-6">
+            <a href="https://www.linkedin.com/in/yunus-afghoni" target="_blank"><Icon name="logos:linkedin-icon" class="w-8 h-12" /> </a>
+            <a href="mailto: akughoni@gmail.com" target="_blank"><Icon name="logos:google-gmail" class="w-8 h-12" /> </a>
+            <a href="https://github.com/ghonijee" target="_blank"><Icon name="fa:github-square" class="w-8 h-12" /> </a>
+            <a href="https://github.com/yunus-floo" target="_blank"><Icon name="fontisto:github" class="w-8 h-12" /> </a>
+            <a href="https://twitter.com/ghonijee" target="_blank"><Icon name="logos:twitter" class="w-8 h-12" /> </a>
+          </div>
         </div>
       </div>
     </Section>
@@ -34,13 +40,13 @@
     </Section>
     <Section title="Recent Blogs">
       <div class="flex flex-col gap-6">
-        <Project v-for="project in projects" :key="project.id" :project="project" />
+        <Blog v-for="blog in blogs" :key="blog._id" :blog="blog" />
       </div>
     </Section>
   </Section>
 </template>
 
 <script setup>
-const projects = await queryContent('/projects').sort({ id: -1 }).limit(4).find()
-console.table(projects)
+const projects = await queryContent('/projects').sort({ id: -1 }).limit(3).find()
+const blogs = await queryContent('/blog').limit(5).find()
 </script>

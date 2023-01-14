@@ -4,13 +4,6 @@
       <div class="mx-auto mt-5 max-w-prose">
         <div class="text-center">
           <h1 class="text-3xl font-bold">{{ doc.title }}</h1>
-          <div v-if="doc.links != null">
-            <ul>
-              <li>
-                <!-- <NuxtLink :href="link['git']"><Icon name="fa-brands:github-square" /> </NuxtLink> -->
-              </li>
-            </ul>
-          </div>
         </div>
         <div class="prose prose-invert mt-8 prose-img:rounded-lg">
           <ContentRenderer :value="doc" />

@@ -25,8 +25,8 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-12">
-          <a href="#" class="font-semibold text-gray-200 hover:text-white">Blogs</a>
-          <a href="#" class="font-semibold text-gray-200 hover:text-white">Projects</a>
+          <NuxtLink href="/blogs" class="font-semibold text-gray-200 hover:text-white">Blogs</NuxtLink>
+          <NuxtLink href="/projects" class="font-semibold text-gray-200 hover:text-white">Projects</NuxtLink>
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->

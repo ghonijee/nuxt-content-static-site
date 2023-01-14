@@ -4,8 +4,9 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-16',
       viewport: 'width=500, initial-scale=1',
-      title: 'Ahmad Yunus Blog|Portofolio',
-      // favicon: '~/public/favicon.svg',
+      title: 'Ahmad Yunus Afghoni',
+      meta: [{ name: 'description', content: 'Personal site blog and portofolio. Sharing terkait dunia software engineer dan teknologi dalam pengembangan aplikasi, baik mobile, web, maupun backend.' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       bodyAttrs: {
         class: 'bg-slate-900 text-gray-100'
       }

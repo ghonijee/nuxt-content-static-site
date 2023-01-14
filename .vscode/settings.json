@@ -1,0 +1,23 @@
+{
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "printWidth": 1000,
+      "singleQuote": false,
+      "semi": false,
+      "useEditorConfig": false,
+      "arrowParens": "avoid",
+      "trailingComma": "none"
+    }
+  },
+  "prettier.printWidth": 1000,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.useEditorConfig": false,
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -28,5 +28,4 @@ import { platformToClass } from '~/constant/color-tags'
 const props = defineProps({
   blog: Object
 })
-console.log(props.blog._path)
 </script>

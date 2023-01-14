@@ -5,13 +5,14 @@
         <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
           <NuxtLink href="/">
             <div class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
-              <svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <!-- <svg class="mr-1 h-10 w-10 stroke-cyan-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M0 0h24v24H0z" stroke="none"></path>
                 <rect x="3" y="12" width="6" height="8" rx="1"></rect>
                 <rect x="9" y="8" width="6" height="12" rx="1"></rect>
                 <rect x="15" y="4" width="6" height="16" rx="1"></rect>
                 <path d="M4 20h14"></path>
-              </svg>
+              </svg> -->
+              <Icon name="fxemoji:raisedhandpartfingers" class="mr-2 h-10 w-10 stroke-cyan-600" />
               AhmadYunus
             </div>
           </NuxtLink>
@@ -57,8 +58,8 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:bg-gray-400/10">Blogs</a>
-                <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:bg-gray-400/10">Projects</a>
+                <NuxtLink @click="dialogMenu = !dialogMenu" href="/blogs" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:bg-gray-400/10">Blogs</NuxtLink>
+                <NuxtLink @click="dialogMenu = !dialogMenu" href="/projects" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-200 hover:bg-gray-400/10">Projects</NuxtLink>
               </div>
             </div>
           </div>

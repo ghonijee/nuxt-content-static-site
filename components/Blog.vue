@@ -12,9 +12,9 @@
       </a>
 
       <p class="text-gray-400">{{ blog.description }}</p>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col-reverse md:flex-row gap-y-2 md:gap-y-0">
         <a :href="blog._path" class="px-2 py-1 text-sm bg-slate-700 rounded hover:bg-sky-800"><p class="text-gray-100 hover:text-white">Read more</p> </a>
-        <div class="ml-5 flex flex-wrap gap-2 w-max">
+        <div class="md:ml-5 flex flex-wrap gap-2 w-max">
           <Tag v-for="(category, index) in blog.categories" :key="index" :color="platformToClass[category]">{{ category }}</Tag>
         </div>
       </div>

@@ -15,5 +15,5 @@
 </template>
 
 <script setup>
-const blogs = await queryContent('/blog').limit(5).find()
+const blogs = await queryContent('/blog').sort({ _id: -1 }).find()
 </script>

@@ -24,11 +24,11 @@
         <div class="shrink-0 flex flex-col items-center">
           <img src="~/assets/profile.jpeg" alt="Profile Yunus" class="h-44 w-44 md:h-5/6 lg:h-72 md:w-72 rounded-full object-cover border-4 border-gray-200" />
           <div class="mt-4 flex gap-x-6">
-            <a href="https://www.linkedin.com/in/yunus-afghoni" target="_blank"><Icon name="logos:linkedin-icon" class="w-8 h-12" /> </a>
-            <a href="mailto: akughoni@gmail.com" target="_blank"><Icon name="logos:google-gmail" class="w-8 h-12" /> </a>
-            <a href="https://github.com/ghonijee" target="_blank"><Icon name="fa:github-square" class="w-8 h-12" /> </a>
-            <a href="https://github.com/yunus-floo" target="_blank"><Icon name="fontisto:github" class="w-8 h-12" /> </a>
-            <a href="https://twitter.com/ghonijee" target="_blank"><Icon name="logos:twitter" class="w-8 h-12" /> </a>
+            <a href="https://www.linkedin.com/in/yunus-afghoni" target="_blank"><Icon name="logos:linkedin-icon" class="w-6 h-8 md:w-8 md:h-12" /> </a>
+            <a href="mailto: akughoni@gmail.com" target="_blank"><Icon name="logos:google-gmail" class="w-6 h-8 md:w-8 md:h-12" /> </a>
+            <a href="https://github.com/ghonijee" target="_blank"><Icon name="fa:github-square" class="w-6 h-8 md:w-8 md:h-12" /> </a>
+            <a href="https://github.com/yunus-floo" target="_blank"><Icon name="fontisto:github" class="w-6 h-8 md:w-8 md:h-12" /> </a>
+            <a href="https://twitter.com/ghonijee" target="_blank"><Icon name="logos:twitter" class="w-6 h-8 md:w-8 md:h-12" /> </a>
           </div>
         </div>
       </div>
@@ -47,6 +47,6 @@
 </template>
 
 <script setup>
-const projects = await queryContent('/projects').sort({ id: -1 }).limit(3).find()
-const blogs = await queryContent('/blog').limit(5).find()
+const projects = await queryContent('/projects').sort({ _id: -1 }).limit(3).find()
+const blogs = await queryContent('/blog').limit(5).sort({ _id: -1 }).find()
 </script>

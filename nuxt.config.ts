@@ -11,5 +11,10 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/robots', 'nuxt-simple-sitemap']
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxtjs/robots', 'nuxt-simple-sitemap'],
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
+  }
 })

@@ -5,8 +5,8 @@
         <div>
           <h1 class="text-2xl text-center md:text-left lg:text-3xl font-bold">Halo, saya Ahmad Yunus 👋</h1>
           <div class="mt-6 text-md lg:text-lg leading-6 md:leading-10">
-            <p>Software Engineer asal Malang, Jawa Timur, ID.</p>
-            <p>Sekarang bekerja remote untuk Floo.ID, sebuah software agency di Sidoarjo yang membuat aplikasi untuk beberapa client korporasi. Biasa bekerja dengan beberapa stack teknologi seperti:</p>
+            <p>Software Engineer asal Malang, Jawa Timur.</p>
+            <p>Sekarang bekerja remote untuk Floo.ID, sebuah software agency di Sidoarjo. Biasa bekerja dengan beberapa stack teknologi seperti:</p>
             <ul class="list-disc mx-8 mt-4">
               <li>Flutter untuk mobile Apps</li>
               <li>Laravel sebagai Backend API & Backoffice</li>
